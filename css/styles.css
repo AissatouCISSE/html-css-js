@@ -1,0 +1,115 @@
+body{
+	/*background-image: url("../image/banque1.jpg");
+	background-repeat:no-repeat; 
+	background-size: 100% 1000px; #F5F5DC*/
+	background-color:#66CDAA; 
+}
+.wrap{
+	max-width: 500px;
+	border-radius: 20px;
+	margin: auto;
+	background:rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	padding: 40px;
+	color: #fff;
+
+}
+h2{
+	text-align: center;
+}
+h3{
+	text-align: center;
+	font-size: 40px;
+	color: #484845;
+	animation: flash 1.4s linear infinite;
+}
+@keyframes flash{
+	0%{
+		color: #484848;
+		text-shadow: none;
+	}
+	90%{
+		color: #484848;
+		text-shadow: none;
+	}
+	100%{
+		color: #ffffff;
+		text-shadow: 0 0 7px #fff999, 0 0 50px #ff6c00;
+	}
+}
+input[type=text]{
+	width: 100%;
+	box-sizing: border-box;;
+	padding: 12px 5px;
+	background: rgba(0,0,0,0.10);
+	outline: none;
+	border: none;
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+	border-radius: 5px;
+	margin: 1px;
+	font-weight: bold;
+}
+input[type=submit]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin-top: 30px;
+	
+	outline: none;
+	border:none;
+	/*background:#60adde;*/
+	background: #66CDAA;
+	opacity: 0.7;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #fff;
+	
+}
+input[type=submit]:hover{
+	background: #006400;
+	opacity: 0.7;
+}
+.premiere{
+
+	display: flex;
+	flex-direction: row;
+}
+h4{
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin-top: 30px;
+	outline: none;
+	border:none;
+	background:#66CDAA;
+	opacity: 0.7;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #fff;
+}
+.aicha{
+	 display: flex;
+  flex-direction: row;
+  padding: 20px 40px;
+}
+.cha{
+	 display: flex;
+  flex-direction: row;
+  padding: 20px 40px;
+}
+.chacha{
+	 text-indent: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 40px;
+}
+.troisieme{
+	 display: flex;
+  flex-direction: row;
+}
+
+.label{
+	margin-left: 50px;
+}
