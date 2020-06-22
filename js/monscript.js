@@ -1,41 +1,3 @@
-function getCheckboxStatus(){
-   var status = document.getElementById("processedCheckBox").checked;
-   if (status) {
-      alert("Yes");
-      document.getElementById("infosemploi").style.visibility = "visible";
-       if((!salaire.value) || isNaN(salaire.value)){
-		alert("Veuillez renseignez correctement votre salaire!");
-	}
-	if((!nomemployeur.value) || isNaN(nomemployeur.value)==false){
-		alert("Veuillez renseignez correctement le nom de l'employeur!");
-	}
-	if((!adressemployeur.value) || isNaN(adressemployeur.value)==false){
-		alert("Veuillez renseignez correctement l'adresse' de l'employeur!");
-	}
-	if((!rs.value) || isNaN(rs.value)==false){
-		alert("Veuillez renseignez la raison sociale de l'entreprise!");
-	}
-	 if((!id.value) || isNaN(id.value)){
-		alert("Veuillez renseignez l'identification de l'entreprise!");
-	}	
-     
-   } else {
-   			alert("No");
-      document.getElementById("infosemploi").style.visibility = "hidden";
-   		salaire.value=null;
-   		// profession.value="null";
-   		nomemployeur.value=null;
-   		adressemployeur.value=null;
-   		rs.value=null;
-   		id.value=null;
-      
-   }
-
-
-
-
-}
-
 
 document.getElementById("formulaire").addEventListener("submit", function(e){
 	e.preventDefault();
@@ -43,7 +5,12 @@ document.getElementById("formulaire").addEventListener("submit", function(e){
 	var numeroagence = document.getElementById("numeroagence");
 	var numerocompte = document.getElementById("numerocompte");
 	var clerib = document.getElementById("clerib");
-	var a = document.getElementById("email");
+	var email = document.getElementById("email");
+	var salire = document.getElementById("salaire");
+	var nomemployeur = document.getElementById("nomemployeur");
+	var adressemployeur = document.getElementById("adressemployeur"); 
+	var rs = document.getElementById("rs");
+	var id = document.getElementById("id");
 	if (!numeroagence.value){
 		alert("Veuillez renseignez le numero de l'agence!");
 		e.preventDefault();
@@ -84,6 +51,11 @@ document.getElementById("formulaire").addEventListener("submit", function(e){
 	}
 	if(!adresse.value){
 		alert("Veuillez renseignez correctement l'adresse'!");
+
+	}
+	if (!email.value){
+		alert("Veuillez renseignez votre email !");
+		e.preventDefault();
 	}
 
 	if((!numtel.value) || isNaN(numtel.value)){
@@ -92,5 +64,36 @@ document.getElementById("formulaire").addEventListener("submit", function(e){
 
 	//employeur
 
+	var status = document.getElementById("processedCheckBox").checked;
+   if (status) {
+      alert("Es-tu salarié(e) ?: Si oui cliquez sur ok Sinon veuillez decochez la case (Es-tu salarié(e) ?)!");
+      document.getElementById("infosemploi").style.visibility = "visible";
+      if((!salaire.value) || isNaN(salaire.value)){
+		alert("Veuillez renseignez correctement votre salaire!");
+	}
+	if((!nomemployeur.value) || isNaN(nomemployeur.value)==false){
+		alert("Veuillez renseignez correctement le nom de l'employeur!");
+	}
+	if((!adressemployeur.value) || isNaN(adressemployeur.value)==false){
+		alert("Veuillez renseignez correctement l'adresse' de l'employeur!");
+	}
+	if((!rs.value) || isNaN(rs.value)==false){
+		alert("Veuillez renseignez la raison sociale de l'entreprise!");
+	}
+	 if((!id.value) || isNaN(id.value)){
+		alert("Veuillez renseignez l'identification de l'entreprise!");
+	}	
+
+   } else {
+   			alert("No");
+      document.getElementById("infosemploi").style.visibility = "hidden";
+   		salaire.value=null;
+   		// profession.value="null";
+   		nomemployeur.value=null;
+   		adressemployeur.value=null;
+   		rs.value=null;
+   		id.value=null;
+      
+   }
 	
 });
