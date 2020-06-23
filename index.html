@@ -19,6 +19,12 @@
  			<input type="text" id="numeroagence" name="numeroagence" placeholder="Numero Agence">
  			<input type="text" id="numerocompte" name="numerocompte" placeholder="Numero Compte">
  			<input type="text" id="clerib" name="clerib" placeholder="Cle Rib" onsubmit="return check()">
+ 			<select type="select" id="typecompte" name="typecompte">
+				<option valeur="fr">type de compe</option>
+				<option valeur="nl">Courant</option>
+				<option valeur="en">Epargne</option>
+				<option valeur="other">Xeweul</option>
+			</select>
  		
  		</div>
  		<h4>Infos Client</h4>
@@ -51,7 +57,10 @@
  			<input type="text" name="id" id="id" placeholder="Identification">
  		</div>
  	</div>
- 		<input type="submit" value="Valider"  >
+ 	<div class="valider">
+ 		<input type="submit"  value="Valider" style="background-color: #006400" >
+ 		
+ 	</div>
  		<span id="msg" style="color:red"></span>
  	</form>
  	

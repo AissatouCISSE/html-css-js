@@ -30,7 +30,7 @@ document.getElementById("formulaire").addEventListener("submit", function(e){
 
 	if (!clerib.value){
                  // document.getElementById("msg").innerHTML="Entrez uniquement une valeur numérique";
-                 alert("Veuillez renseignez le clerib:Entrez uniquement une valeur numérique");
+         alert("Veuillez renseignez le clerib:Entrez uniquement une valeur numérique");
                
              }
     if(isNaN(clerib.value)){

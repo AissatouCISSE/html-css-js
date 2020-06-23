@@ -23,14 +23,16 @@ h3{
 	font-size: 40px;
 	color: #484845;
 	animation: flash 1.4s linear infinite;
+	color: white;
 }
 @keyframes flash{
 	0%{
-		color: #484848;
+		/*color: #484848;*/
+		color: white;
 		text-shadow: none;
 	}
 	90%{
-		color: #484848;
+		color: white;
 		text-shadow: none;
 	}
 	100%{
@@ -50,6 +52,7 @@ input[type=text]{
 	border-radius: 5px;
 	margin: 1px;
 	font-weight: bold;
+	background-color: white;
 }
 input[type=submit]{
 	width: 100%;
@@ -113,4 +116,10 @@ h4{
 
 .label{
 	margin-left: 50px;
+}
+.valider{
+	margin-left: 210px;
+	margin-right: 210px;
+	color: #006400;
+
 }
