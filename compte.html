@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<title>Exercice sur HTML - CSS - JS</title>
+</head>
+<body>
+	<i class="fa fa-bank" style="font-size:48px;color:white;" text="Banque du peuple"></i>
+
+	<nav>
+			<div class="flex-container">
+				<div><a href="compte.html">Compte</a></div>
+				<div><a href="index.html">Client</a></div>
+			  
+			</div>
+	</nav>
+	<hr> 
+
+	<marquee><h3>Bienvenu dans la banque du peuple</h3></marquee>
+ <div class="wrap">
+ 	<h2>Ouverture de compte</h2>
+ 	<form id="formulaire">
+ 		<h4>Infos Compte</h4>
+ 		<div class="premiere">
+ 			<div class="first">
+ 			<input type="text" id="numeroagence" name="numeroagence" placeholder="Numero Agence">
+ 			<input type="text" id="numerocompte" name="numerocompte" placeholder="Numero Compte">
+ 			<input type="text" id="clerib" name="clerib" placeholder="Cle Rib" onsubmit="return check()">
+ 			</div>
+
+ 			<div class="second">
+ 			
+ 			<select type="select" id="typecompte" name="typecompte">
+				<option valeur="fr">type de compte</option>
+				<option valeur="nl">Courant</option>
+				<option valeur="en">Epargne</option>
+				<option valeur="other">Xeweul</option>
+				<option valeur="other">bloque</option>
+			</select>
+			<input type="text" id="frais" name="frais" placeholder="Frais d'ouverture">
+			<select type="select" id="client" name="client">
+				<option valeur="fr">Aissatou CISSE</option>
+				<option valeur="nl">Fama SOW</option>
+				<option valeur="en">Cheque MBOW</option>
+				<option valeur="other">Christmas DIATTA</option>
+			</select>
+			</div>
+ 		
+ 		</div>
+
+ 		<div class="valider">
+ 		<input type="submit"  value="Valider" style="background-color: #006400" >
+ 		
+ 	</div>
+ 		<span id="msg" style="color:red"></span>
+ 	</form>
+ 	
+ </div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
